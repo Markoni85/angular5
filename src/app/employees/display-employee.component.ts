@@ -11,12 +11,17 @@ export class DisplayEmployeeComponent implements OnInit, OnChanges {
   constructor() { }
 
   @Input() employee: Employee;
-  
+ // @Output() notify: EventEmitter<string> = new EventEmitter<string>();
+
   ngOnChanges(changes: SimpleChanges){
     console.log(changes);
   }
 
   ngOnInit() {
   }
+  
+  // handleClick(){
+  //   this.notify.emit(this.employee.name);
+  // }
 
 }
